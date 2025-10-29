@@ -27,13 +27,13 @@ struct date
 struct date_signed {
     // d has value between 0 and 31, so 5 bits
     // are sufficient
-    int d : 5;
+    signed int d : 5;
 
     // m has value between 0 and 15, so 4 bits
     // are sufficient
-    int m : 4;
+    signed int m : 4;
 
-    int y;
+    signed int y;
 };
 
 int main()
@@ -50,3 +50,21 @@ int main()
    return 0;
 }
 
+/*
+:
+While using signed int for bit fields is standard, 
+the exact packing and alignment of bit fields within a structure can be implementation-defined.
+This means that a structure containing bit fields might have a different memory layout 
+on different compilers or architectures.
+
+
+(gdb) info locals
+dt = {d = 21, m = 10, y = 2015}
+sdt = {d = -1, m = -4, y = 2015}
+(gdb) p /t dt
+$1 = {d = 10101, m = 1010, y = 11111011111}
+(gdb) p /t sdt
+$2 = {d = 11111111111111111111111111111111, 
+  m = 11111111111111111111111111111100, y = 11111011111}
+
+*/

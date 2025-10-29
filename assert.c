@@ -23,3 +23,8 @@ int main(void)
    //open_record("string");
    open_record(NULL);
 }
+/*
+exe: assert.c:16: open_record: Assertion `record_name != NULL' failed.
+Aborted (core dumped)
+
+*/
