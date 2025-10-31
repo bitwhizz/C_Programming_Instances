@@ -21,3 +21,23 @@ int main( )
 	printf( "Memory size occupied by status2 : %d\n", sizeof(status2));
 	return 0;
 }
+
+/*
+(gdb) ptype status1
+type = struct {
+    unsigned int widthValidated;
+    unsigned int heightValidated;
+}
+(gdb) ptype status2
+type = struct {
+    unsigned int widthValidated : 1;
+    unsigned int heightValidated : 1;
+}
+(gdb) sizeof(status1)
+Undefined command: "sizeof".  Try "help".
+(gdb) p sizeof(status1)
+$5 = 8
+(gdb) p sizeof(status2)
+$6 = 4
+
+*/

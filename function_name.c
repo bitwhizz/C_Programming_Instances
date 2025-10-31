@@ -11,9 +11,9 @@
 
 void foo(void)
 {
-   printf("%s\n",__func__);
-   printf("%s\n",__FILE__);
-   printf("%d\n",__LINE__);
+   printf("func : %s\n",__func__);
+   printf("file : %s\n",__FILE__);
+   printf("line : %d\n",__LINE__);
 }
 
 void bar(void)

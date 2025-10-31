@@ -1,4 +1,5 @@
-/* C program to demonstrate the working of break statement by terminating a loop, if user inputs negative number*/
+/* C program to demonstrate the working of break statement 
+by terminating a loop, if user inputs negative number*/
 
 # include <stdio.h>
 int main()
