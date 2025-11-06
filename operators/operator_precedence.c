@@ -57,6 +57,8 @@ The value of the expression is 23.
 
 Let me know if you'd like further clarification or similar examples!
 
+Note :  Pre-increment updates the variable before use, while post-increment updates it after use.
+
 */
 #include<stdio.h>
 
