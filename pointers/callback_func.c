@@ -65,3 +65,13 @@ sleep(2000);
 
 return 0;
 }
+
+
+/*
+(gdb) info thread
+  Id   Target Id                               Frame 
+  1    Thread 0x7ffff7fd7700 (LWP 10390) "exe" 0x00007ffff78bc38d in nanosleep ()
+    at ../sysdeps/unix/syscall-template.S:84
+* 2    Thread 0x7ffff77ef700 (LWP 10394) "exe" factorial (args=0x602010) at callback_func.c:39
+
+*/

@@ -16,6 +16,9 @@ void * _memcpy(void* dst, const void* src,unsigned int cnt)
         while(cnt)
         {
             //copy byte by byte
+
+            //Note :  Pre-increment updates the variable before use, 
+            //while post-increment updates it after use.
             *(pszDest++) = *(pszSource++);
             --cnt;
         }
