@@ -5,6 +5,14 @@ and take another route to your desired destination.
 
 The N Queen is the problem of placing N chess queens on an NxN chessboard so that no two queens attack each other. 
 For Example , following is a soulution for 4 Queen problem.
+
+* A queen attacks horizontally , Vertically , and diagonally with any number of steps allowed.
+* Not two queens should be placed horizontally , vertically , or diagonally. In other words, any queen should not
+    be in the same row , column , or diagonal as any other queen.
+* We start with N = 4 , as for N = 1 to 3, a solution is not possible given the constraints.
+
+
+for more info follow the link , https://www.studymite.com/blog/backtracking-in-c 
 */
 
 
