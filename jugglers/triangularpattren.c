@@ -1,18 +1,20 @@
 #include<stdio.h>
 void main()
 {
-	int x;
-	int i,j,s;
+	int n=0;
+	int index=0,pattern=0,space=0;
+	int c=1;	//c = *;
+	
 	printf("enter the no of rows:");
-	scanf("%d",&x);
-	for (i=1;i<=x;i++)
+	scanf("%d",&n);
+	for (index=1;index<=n;index++)
 	{
-	  for(s=x-i;s>=1;s--)
+	  for(space=n-index;space>=1;space--)
 	    {
 	      printf(" ");
 	    }
-	int c=1;
-	for(j=1;j<=(2*i)-1;j++)
+
+	for(pattern=1;pattern<=(2*index)-1;pattern++)
 	  {
 	    printf("%d",c);
 	  }
