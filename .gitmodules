@@ -1,0 +1,3 @@
+[submodule "Bitwise_Programs_in_C"]
+	path = Bitwise_Programs_in_C
+	url = git@github.com:bits2bytes-tech/Bitwise_Programs_in_C.git
