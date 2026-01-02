@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/*
+#define NULL ((void *)0)
+
+The NULL macro is a constant integer zero cast to a pointer to void.
+*/
 int main ()
 {
 	unsigned int *ptr = NULL;

@@ -1,6 +1,9 @@
 
 // C program to demonstrate declaration of
 // pointer variables.
+
+//The basic concept of a pointer is simple : it is a variable that
+//stores the address of a memory location.
 #include <stdio.h>
 int main()
 {

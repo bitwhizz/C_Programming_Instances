@@ -1,9 +1,15 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+
+/*
+Memory is allocated from the heap and can be released as necessary.
+The scope is restricted to the pointer or pointers that reference the memory.
+it exist until it is released.
+*/
 int main(){
 
-  int *arr[5];
+  size_t *arr[5];  //size_t created to provide a safe type of sizes
 
   int i = 0;
 

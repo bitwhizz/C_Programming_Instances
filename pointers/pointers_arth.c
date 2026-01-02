@@ -12,7 +12,8 @@
 int main()
 {
 	int x=5,y=2;
-	int a=0,b=0,c=0,d=0,e=0;
+	__PTRDIFF_TYPE__ a=0,b=0;  //ptrdiff_t - created to handle pointer arithematic
+	int c=0,d=0,e=0;
 	int *ptr;
 	int *ptr2;
 	ptr=&x ;
