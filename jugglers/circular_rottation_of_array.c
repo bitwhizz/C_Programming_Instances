@@ -27,16 +27,21 @@ int main()
     for (int a = 0; a < size; a++) {     
         printf("%d ", arr[a]);     
     }             
-    for(int a = 0; a < n; a++) { int b, temporary; temporary = arr[size-1]; for(b = size-1; b > 0; b--)
-            {    
-                    arr[b] = arr[b-1];    
-             }    
-            arr[0] = temporary;    
+
+    for(int a = 0; a < n; a++) {
+        int b, temporary;
+        temporary = arr[size-1]; 
+        for(b = size-1; b > 0; b--)
+        {    
+            arr[b] = arr[b-1];    
+        }    
+        arr[0] = temporary;    
     }            
     printf("\n");            
     printf("New Array: \n");    
     for(int a = 0; a< size; a++){    
         printf("%d ", arr[a]);    
     }    
+    printf("\n");         
     return 0;    
 }
