@@ -3,9 +3,19 @@ int main()
 {
 	int local;
 	{
+		/*
+		Duplicate variable names declared within a local block take 
+		precedence over variables with the same name declared outside
+		the local block.
+		*/
 		int local=10;
 		printf("local=%d\n",local);
 	}
+	/*
+	Also notice that when the if statement local block had ended,
+	 the program had reentered the scope of the original test_var,
+	 and its value was 0.
+	*/
 	printf("local=%d\n",local);
 	return 0;
 }
