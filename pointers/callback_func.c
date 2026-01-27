@@ -19,26 +19,26 @@ typedef struct _factorialData {
 
 void* factorial(void *args) {
 
-FactorialData *factorialData = (FactorialData*) args; //typecasting
+	FactorialData *factorialData = (FactorialData*) args; //typecasting
 
-void (*callBack)(FactorialData*); // Function prototype
+	void (*callBack)(FactorialData*); // Function prototype
 
-int number = factorialData->number;
+	int number = factorialData->number;
 
-callBack = factorialData->callBack;
+	callBack = factorialData->callBack;
 
-callBack(factorialData);
+	callBack(factorialData);
 
-int num = 1;
-	for(int i = 1; i<=number; i++) {
-		num *= i;
-	}
+	int num = 1;
+		for(int i = 1; i<=number; i++) {
+			num *= i;
+		}
 
-factorialData->result = num;
+	factorialData->result = num;
 
-callBack(factorialData);
+	callBack(factorialData);
 
-pthread_exit(NULL);
+	pthread_exit(NULL);
 }
 
 void callBackFunction(FactorialData *factorialData) {
@@ -47,23 +47,23 @@ void callBackFunction(FactorialData *factorialData) {
 
 int main(int arc,char **argv)
 {
-pthread_t thread_id;
+	pthread_t thread_id;
 
-FactorialData *data =(FactorialData*) malloc(sizeof(FactorialData));
+	FactorialData *data =(FactorialData*) malloc(sizeof(FactorialData));
 
-if(!data) {
-printf("Failed to allocate memory\n");
-return -1;
-}
+	if(!data) {
+	printf("Failed to allocate memory\n");
+	return -1;
+	}
 
-data->number = 5;
-data->callBack = callBackFunction;
+	data->number = 5;
+	data->callBack = callBackFunction;
 
-int thread =pthread_create(&thread_id, NULL,factorial,(void *)data);
+	int thread =pthread_create(&thread_id, NULL,factorial,(void *)data);
 
-sleep(2000);
+	sleep(2000);
 
-return 0;
+	return 0;
 }
 
 
