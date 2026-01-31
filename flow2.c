@@ -1,12 +1,14 @@
 		#include<stdio.h>
-		
+		int funct1(int a);
+		int funct2(int b);
+			
 		int funct2(int b) 
 		{
 			if (b == 0)
 				return b;
 			else
 				funct1(b--);
-		
+		}
 
 		int funct1(int a) 
 		{ 

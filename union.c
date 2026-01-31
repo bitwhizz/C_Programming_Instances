@@ -12,7 +12,7 @@ main()
 	printf("a=%d\n",example.a);
 	example.b = 128;
 	printf("b=%u\n",example.b);
-	example.b = 1;
+	example.c = 1;
 	printf("c=%hd\n",example.c);
 }
 
