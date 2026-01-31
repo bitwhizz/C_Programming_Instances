@@ -19,19 +19,19 @@ int main()
   printf("Decimal number is %d\n",result);
 }
 
-unsigned int func(unsigned int n,unsigned int base)
+unsigned int func(unsigned int binary,unsigned int base)
 {
-  int rem,d,j=1,dec = 0;
+  int reminder,temp,pow=1,decimal = 0;
 
-  while(n >0)
+  while(binary >0)
   {
-    rem = n%10;  //taking the last digit
+    reminder = binary%10;  //taking the last digit
 
-    d=rem*j;
-    dec+=d;
-    j*=base;
+    temp=reminder*pow;
+    decimal+=temp;
+    pow*=base;    //add the weighted value
 
-    n=n/10;  // skipping the last digit
+    binary/=10;  // skipping the last digit
   }
-  return dec;
+  return decimal;
 }

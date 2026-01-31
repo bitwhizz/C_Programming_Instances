@@ -27,11 +27,11 @@ struct date
 struct date_signed {
     // d has value between 0 and 31, so 5 bits
     // are sufficient
-    signed int d : 5;
+    signed int d : 6;
 
     // m has value between 0 and 15, so 4 bits
     // are sufficient
-    signed int m : 4;
+    signed int m : 5;
 
     signed int y;
 };
