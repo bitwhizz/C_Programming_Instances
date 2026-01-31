@@ -10,14 +10,14 @@ void func4(void);
 int x=6;
 
 /*if an external variable is defined as static,then it can't be used in other programs*/
-static int x=10;
+//static int x=10;
 
 
 main()
 {
 
 /*if the variable x is needed only in this function then we use extern in this function*/
-	//extern int x;
+	extern int x;
 	printf("%d\n",x);
 	printf("main function executed\n");
 	func1();
