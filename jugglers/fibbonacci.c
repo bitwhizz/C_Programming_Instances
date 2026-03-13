@@ -11,7 +11,7 @@ The first few numbers in the series are:
 
 #include<stdio.h>
 
-main()
+int main(void)
 {
 	long x,y,z;
 	int i,n;
