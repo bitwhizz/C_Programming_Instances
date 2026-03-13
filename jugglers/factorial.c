@@ -2,15 +2,16 @@
 #include<stdio.h>
 int main()
 {
-	int x,i;
-	scanf("%d",&x);
-	int a=1,b;
-	b=x;
-	for(i=1;i<=x;i++)
-	{
-		a=a*b;
-		--b;
+	int num,i;
+	scanf("%d",&num);
 
-		}
-	printf("%d\n",a);
+	int factorial=1;
+	int multiplier=num;
+
+	for(i=1;i<=num;i++)
+	{
+		factorial=factorial*multiplier;
+		--multiplier;
+	}
+	printf("%d\n",factorial);
 }
