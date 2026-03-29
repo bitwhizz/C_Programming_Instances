@@ -91,5 +91,6 @@ Disassembly of section .text:
   400579:	c3                   	ret    
   40057a:	66 0f 1f 44 00 00    	nop    WORD PTR [rax+rax*1+0x0]
 
-
+for deeper understanding follow the blog
+https://blog.holbertonschool.com/hack-virtual-memory-stack-registers-assembly-code/ 
 */
