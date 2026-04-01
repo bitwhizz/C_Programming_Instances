@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include <stdbool.h>
 
 int reverse(int n);
 
@@ -21,6 +22,9 @@ int reverse(int n)
 	while(n>0)
 	{
 		rem=n%10;
+
+		if(rev > (0x7fffffff - rem)/10) return false;  //overflow check
+		
 		rev=rev*10+rem;
 		n/=10;
 	}
