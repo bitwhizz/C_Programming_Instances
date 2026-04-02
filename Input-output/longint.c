@@ -1,4 +1,11 @@
 /*4. Print an entered long int.*/
+
+/*
+The modifier h can be used before conversion specification d,i,o,u,x to specify short integer,
+likewise the modifier l can be used to specify long integer.
+*/
+
+
 #include<stdio.h>
 main()
 {
