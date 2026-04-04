@@ -4,9 +4,12 @@ pass(int m[][4])
 {
 	int i,j;
 
-	for(i=0;i<2;i++)
+	int rows = (sizeof(m)*sizeof(m[0][0]))/sizeof(m[0]);
+	int columns = sizeof(m[0]) / sizeof(m[0][0]);
+
+	for(i=0;i<rows;i++)
 	{
-		for(j=0;j<4;j++)
+		for(j=0;j<columns;j++)
 		{
 			printf("%d ",m[i][j]);
 		}
