@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-main()
+int main()
 {
 	int a;
 	int m[5];
@@ -13,5 +13,7 @@ main()
 	{
 	printf("m[%d]=%d , %p\n",j,*(m+j),&m[j]);	//to fetch the address of the array stored
 	}
+
+	return 0;
 }
 

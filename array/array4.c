@@ -9,13 +9,13 @@ int main()
 	
 	for(i=0;i<5;i++)
 	{
-		printf("m[%d] address=%d\n",i,(int)&m[i]);
+		printf("m[%d] address=%x\n",i,(int)&m[i]);
 		printf("m[%d] values=%d\n",i,m[i]);
 	}
-	printf("address of m[-1]=%d\n",(int)&m[-1]);
-	printf("address of i=%d\n",(int)&i);
-	printf("address of m[6]=%d\n",(int)&m[6]);
-	printf("address of j=%d\n",(int)&j);
+	printf("address of m[-1]=%x\n",(int)&m[-1]);
+	printf("address of i=%x\n",(int)&i);
+	printf("address of m[6]=%x\n",(int)&m[6]);
+	printf("address of j=%x\n",(int)&j);
 	printf("value of i=%d\n",i);
 	printf("value of j=%d\n",j);
 	printf("\n");
