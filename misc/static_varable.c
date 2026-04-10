@@ -2,7 +2,7 @@
 int main()
 {
 	  int a=10;				//here if we give static or global then no problem
-	  static int b=a;                       // here if we give static the program does't executes
+	  static int b=a;                       // here if we give static the program does't executes as the initializer value is not a constant.
 	  printf("a=%d\n b=%d\n",a,b);
 	  return 0;
 }

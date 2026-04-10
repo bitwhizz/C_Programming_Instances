@@ -23,7 +23,7 @@ int main(void)
     LOG_MESSAGE(ERR, STD_ERR, "Failed to open file");
 
     /* provide string as argument */
-    LOG_MESSAGE(INFO, STD_OUT, "%s Geeks for Geeks", s);
+    LOG_MESSAGE(INFO, STD_OUT, "%s C is a Music", s);
 
     /* provide integer as arguments */
     LOG_MESSAGE(INFO, STD_OUT, "%d + %d = %d", 10, 20, (10 + 20));
