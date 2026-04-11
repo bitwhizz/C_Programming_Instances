@@ -9,7 +9,10 @@
 #include<sys/types.h>
 #include<sys/wait.h>
 
-
+/*
+This is a classic example of encapsulation in C. 
+By grouping the data and the function together, you can pass this struct into a separate thread or a work queue.
+*/
 typedef struct _factorialData {
 	int number;
 	int result;
