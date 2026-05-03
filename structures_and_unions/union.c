@@ -1,3 +1,9 @@
+/*
+unions have a similar appearace to structs, but the memory layout has one crucial difference.
+Instead of each member being stored affter the end of the previous one, all the members have an offset of zero.
+The storage for the individual members is thus overlaid : only one member at a time can be strored there.
+*/
+
 #include<stdio.h>
 union my
 {
