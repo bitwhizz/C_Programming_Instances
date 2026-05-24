@@ -1,3 +1,10 @@
+/*
+Explicit Type Conversion (Type Casting)
+
+This is a user-defined conversion. 
+You explicitly force the compiler to convert a value from one type to another using the cast operator: (type) expression.
+*/
+
 #include <stdio.h>
 int main(void)
 {
