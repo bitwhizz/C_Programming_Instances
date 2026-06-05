@@ -10,13 +10,13 @@ int main(void)
     printf("Enter the second string : ");
     scanf("%s",str2);
 
-    if((strcmp(str1,str2))==0)
+    if((_strcmp(str1,str2))==0)
         printf("strings are same \n");
     else
         printf("String are not same \n");
 }
 
-int astrcmp(char str1[],char str2[])
+int _strcmp(char str1[],char str2[])
 {
     int i=0;
 
