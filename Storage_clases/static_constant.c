@@ -71,3 +71,45 @@ int main(){
     printf("Exiting ...\n");
     return 0;
 }
+
+
+/*
+without const :
+The RAM Penalty: At startup, the initialization code (called crt0) physically copies those bytes from Flash into a allocated space in your RAM (.data segment).
+Result: You are now consuming memory space in both Flash and RAM for the exact same data.
+
+saif@saif-Inspiron-5547:~/programmer/C_Programming_Instances $ size  Storage_clases/static_constant 
+   text    data     bss     dec     hex filename
+   2064     624       8    2696     a88 Storage_clases/static_constant
+saif@saif-Inspiron-5547:~/programmer/C_Programming_Instances $ time Storage_clases/static_constant 
+Welcome to the System Console. Type 'help' for options. 
+> status
+System Status : 100% Operational.
+> quit
+Exiting ...
+
+real    0m3.829s
+user    0m0.003s
+sys     0m0.000s
+
+with const : 
+The RAM Savings: Because it is marked read-only, the startup code skips copying it to RAM.
+Result: When your code needs to read message, the CPU reads it directly out of the Flash/ROM memory.
+Your RAM usage for this variable drops to 0 bytes.
+
+saif@saif-Inspiron-5547:~/programmer/C_Programming_Instances $ size  Storage_clases/static_constant 
+   text    data     bss     dec     hex filename
+   2128     576       8    2712     a98 Storage_clases/static_constant
+
+saif@saif-Inspiron-5547:~/programmer/C_Programming_Instances $ time Storage_clases/static_constant 
+Welcome to the System Console. Type 'help' for options. 
+> status
+System Status : 100% Operational.
+> quit
+Exiting ...
+
+real    0m9.664s
+user    0m0.003s
+sys     0m0.000s
+
+*/
