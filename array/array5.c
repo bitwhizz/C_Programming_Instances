@@ -40,3 +40,13 @@ int main()
 	pass_to_pointer(a);
 }
 
+/*
+(gdb) p sizeof(m)
+$5 = 8
+(gdb) p sizeof(m[0][0])
+$6 = 4
+(gdb) 4 * 8
+
+(gdb) p sizeof(m[0])
+$8 = 16
+*/
